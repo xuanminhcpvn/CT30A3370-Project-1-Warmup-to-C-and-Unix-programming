@@ -15,6 +15,6 @@ valgrind:
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind.out.txt ./reverse
 
 clean:
-	rm -f reverse test_reverse actual.txt valgrind.out.txt
+	rm -f reverse test_reverse actual.txt valgrind.out.txt *.txt
 
 .PHONY: clean test_files test_reverse valgrind
