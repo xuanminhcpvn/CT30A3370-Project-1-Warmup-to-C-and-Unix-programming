@@ -11,9 +11,8 @@ test_files: reverse
 test_reverse: tests/test_reverse.c src/reverse.c src/reverse.h
 	$(CC) $(CFLAGS) tests/test_reverse.c src/reverse.c -o test_reverse
 
-valgrind: reverse
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes \
-	--verbose --log-file=valgrind.out.txt ./reverse
+valgrind: 
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind.out.txt ./reverse
 
 clean:
 	rm -f reverse test_reverse actual.txt valgrind.out.txt
