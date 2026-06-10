@@ -1,3 +1,66 @@
 # CT30A3370-Project-1-Warmup-to-C-and-Unix-programming
 
-# Installation instruction: sudo apt-get install libcunit1 libcunit1-doc libcunit1-dev (For CUnit tests)
+# Installation instruction: 
+
+
+## Installation instruction
+
+```bash
+Requirement
+   * Best run on Linux only, not sure how will this be working in WSL or MacOS.
+   * Unit tests also best run on Linux/WSL (MacOS does not work so well with CUnit)
+ ```
+
+```bash
+## Preinstallation:
+(For CUnit tests): sudo apt-get install libcunit1 libcunit1-doc libcunit1-dev 
+(For valgrind + gcc compiler): sudo apt-get update && sudo apt-get install build-essential valgrind 
+## To run program:
+git clone https://github.com/xuanminhcpvn/CT30A3370-Project-1-Warmup-to-C-and-Unix-programming
+* If runtime environment is Windows, do this in repository where WSL is remotely connected
+make
+* Different ways to run (First option will require to follow additional command prompts):
+./reverse 
+./reverse input.txt
+./reverse input.txt output.txt
+```
+## ERRORS and ASSUMPTIONS
+* For ./reverse input.txt output.txt input can't be same
+* The length of a input line can be very long and would not break the program
+* Same with file length
+* File access errors are handled
+* Malloc fails are addressed for every malloc() even for getline() that also use malloc() internally
+* The program prevents from inputting too many arguments (more than 3 including the executable file
+* Error messages matches the required format
+
+
+### Usage of input and output text files
+
+> **NOTE!** To prevent any issue, text files (for instance `*.txt`) have to be on the **main level** (same level where for instance `Makefile` is).
+
+### Useful Make command
+
+```bash
+make clean         # Remove 
+make valgrind      # Perform memory leaks check
+
+## To compile tests
+make test_reverse
+./test_reverse
+```
+# Project folder structure
+* ./src contains all source code and header files
+* ./tests contains all CUnit-tests (we only have 1 Test Suite/Group so no further instruction)
+
+* NOTES.md:ssä vaan tarkoitettu projektijäsenille luettavaksi
+```c
+├──Makefile
+├──README.md
+├──src
+|    ├── main.c
+|    ├── reverse.c
+|    ├── reverse.h
+├──tests
+|    ├──test_reverse.c
+```
+#
