@@ -1,10 +1,5 @@
 # CT30A3370-Project-1-Warmup-to-C-and-Unix-programming
-
-# Installation instruction: 
-
-
 ## Installation instruction
-
 ```bash
 Requirement
    * Best run on Linux only, not sure how will this be working in WSL or MacOS.
@@ -32,16 +27,14 @@ make
 * Malloc fails are addressed for every malloc() even for getline() that also use malloc() internally
 * The program prevents from inputting too many arguments (more than 3 including the executable file
 * Error messages matches the required format
-
-
 ### Usage of input and output text files
 
 > **NOTE!** To prevent any issue, text files (for instance `*.txt`) have to be on the **main level** (same level where for instance `Makefile` is).
 
 ### Useful Make command
 
-```bash
-make clean         # Remove 
+```bash)
+make clean         # Remove miscellaneous, executable and debug files (in this project they are mostly all .txt files)
 make valgrind      # Perform memory leaks check
 
 ## To compile tests
@@ -51,9 +44,7 @@ make test_reverse
 # Project folder structure
 * ./src contains all source code and header files
 * ./tests contains all CUnit-tests (we only have 1 Test Suite/Group so no further instruction)
-
-* NOTES.md:ssä vaan tarkoitettu projektijäsenille luettavaksi
-```c
+```
 ├──Makefile
 ├──README.md
 ├──src
