@@ -1,12 +1,5 @@
 # Prerequisites
 *.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
 # Linker output
 *.ilk
 *.map
@@ -27,9 +20,8 @@
 *.so
 *.so.*
 *.dylib
-
 # Executables
-*.exe
+# *.exe #maybe include this
 *.out
 *.app
 *.i*86
@@ -53,3 +45,5 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+reverse

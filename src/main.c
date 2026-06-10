@@ -11,6 +11,7 @@ int main(int argc, char *argv[]){
         //One of the error check requirement
         if (argc == 1){
             //When invoked without any arguments, your reversing program should read from standard input (stdin), which is the input that a user types in, and write to standard output (i.e., the screen).
+            
         } else if (argc == 2){
             //expected .txt file
             //When invoked with just one command-line argument, the user supplies the input file, but the file should be printed to the screen. In Unix-based systems, printing to the screen is the same as writing to a special file known as standard output, or stdout for short.
