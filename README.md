@@ -1,4 +1,16 @@
 # CT30A3370-Project-1-Warmup-to-C-and-Unix-programming
+## Introduction
+This project implement a simple program called reverse that either read file contents or user input in reverse order using doubly linked list structure to read from the tail to the head of the list.
+## Point proposal
+-Everything submitted compiles and works at least on some level. (Required, 1 points)
+
+-The documentation is appropriate, correct and the repository is available (Required, 0 point)
+
+-The documentation is detailed, and the provided source code is reasonably well commented. (1 point)
+
+-all additional assumptions (1 point) and errors mentioned are addressed (2 points)
+
+**TOTAL:= 5**
 ## Installation instruction
 ```bash
 Requirement
